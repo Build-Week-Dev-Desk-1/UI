@@ -128,15 +128,37 @@ table {
 }
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+nav .links {
+  margin: 1%;
+}
+nav .links a {
+  text-decoration: none;
+  color: #c716c4;
+  width: 20%;
+  justify-content: space-around;
 }
 nav .queue {
   display: flex;
   justify-content: space-between;
+  margin: 1%;
+}
+nav .queue a {
+  text-decoration: none;
+}
+nav .queue p {
+  padding: 1%;
 }
 footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 1%;
+}
+body {
+  background: whitesmoke;
 }
 .main {
   display: flex;
@@ -151,6 +173,36 @@ footer {
   align-items: center;
   width: 100%;
 }
+.get-started h2,
+.get-started h3 {
+  line-height: 1.4rem;
+}
+.get-started h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.get-started h3 {
+  margin: 1% 0;
+  font-size: 1.4rem;
+  transition: linear;
+}
+.get-started h6 {
+  line-height: 1.4rem;
+  margin-bottom: 1%;
+}
+.get-started button {
+  flex-direction: row;
+  padding: 1%;
+  font-size: 100%;
+  border-radius: 8%;
+  background: #C716C4;
+  color: white;
+}
+.get-started button:hover {
+  cursor: pointer;
+  color: #C716C4;
+  background-color: white;
+}
 .phone-screen {
   display: flex;
   flex-direction: row;
@@ -160,4 +212,46 @@ footer {
   width: 50%;
   height: 50%;
   margin: 5%;
+}
+.middle-content {
+  display: flex;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.middle-content .middle-img {
+  width: 50%;
+}
+.middle-content .middle-img img {
+  width: 90%;
+  height: 40%;
+}
+.middle-content .middle-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 2%;
+}
+.bottom-content {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.bottom-content .bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  width: 100%;
+}
+.bottom-content .bottom-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.bottom-content .bottom-img img {
+  width: 90%;
+  height: 90%;
 }
