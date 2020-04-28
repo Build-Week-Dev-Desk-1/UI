@@ -8,6 +8,12 @@ body {
     margin: 5%;
     width: 100%;
 
+    @media @mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 .get-started {
@@ -43,14 +49,24 @@ body {
         font-size: 100%;
         border-radius: 8%;
         background: #C716C4;
-        color: white;
+    
+
+        a {
+            text-decoration: none;
+            color: white;
+            
+        }
 
         &:hover{
             cursor: pointer;
-            color: #C716C4;
-            background-color: white;
+            a{
+               color: #C716C4; 
+            }
+            
+            background: white;
         }
     }
+
     
 }
 
@@ -58,6 +74,10 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
+
+    @media @mobile {
+        justify-content: center;
+    }
     img {
         width: 50%;
         height: 50%;
@@ -71,6 +91,11 @@ body {
     align-items: center;
     justify-content: center;
     
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .middle-img {
         width: 50%;
@@ -97,6 +122,11 @@ body {
     justify-content: center;
     margin: 5%;
     
+    @media @mobile {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
     
     .bottom-text{
         display: flex;

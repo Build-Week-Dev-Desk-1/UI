@@ -132,6 +132,13 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav .links {
   margin: 1%;
 }
@@ -166,6 +173,13 @@ body {
   margin: 5%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .get-started {
   display: flex;
   flex-direction: column;
@@ -196,17 +210,27 @@ body {
   font-size: 100%;
   border-radius: 8%;
   background: #C716C4;
+}
+.get-started button a {
+  text-decoration: none;
   color: white;
 }
 .get-started button:hover {
   cursor: pointer;
+  background: white;
+}
+.get-started button:hover a {
   color: #C716C4;
-  background-color: white;
 }
 .phone-screen {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .phone-screen {
+    justify-content: center;
+  }
 }
 .phone-screen img {
   width: 50%;
@@ -218,6 +242,13 @@ body {
   margin: 5%;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .middle-content .middle-img {
   width: 50%;
@@ -238,6 +269,13 @@ body {
   justify-content: center;
   margin: 5%;
 }
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .bottom-content .bottom-text {
   display: flex;
   align-items: center;
@@ -254,4 +292,19 @@ body {
 .bottom-content .bottom-img img {
   width: 90%;
   height: 90%;
+}
+.team {
+  margin: 2%;
+}
+.team .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+.team .member img {
+  width: 10%;
+  height: 10%;
+  margin-bottom: 1%;
 }
