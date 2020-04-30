@@ -1,20 +1,43 @@
 nav {
     display: flex;
-    
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
 
-
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .links {
+        margin: 1%;
         
         a {
-           
+           text-decoration: none;
+           color: #c716c4;
+           width: 100%;
+           justify-content: space-around; 
         }
     }
 
     .queue {
         display: flex;
         justify-content: space-between;
+        margin: 1%;
+       
+        @media @mobile {
+            justify-content: center;
+            margin-top: 2%;
+        }
 
+        a {
+            text-decoration: none;
+            
+        }
+        p{
+           padding: 1%; 
+           
+        }
     }
 }
 
