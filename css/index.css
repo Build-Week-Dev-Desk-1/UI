@@ -141,17 +141,33 @@ nav {
 }
 nav .links {
   margin: 1%;
+  width: 25%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 58%;
+  }
 }
 nav .links a {
   text-decoration: none;
   color: #c716c4;
   width: 100%;
   justify-content: space-around;
+  text-align: center;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    font-size: 1.2rem;
+  }
 }
 nav .queue {
   display: flex;
   justify-content: space-between;
   margin: 1%;
+  width: 40%;
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   nav .queue {
@@ -164,6 +180,7 @@ nav .queue a {
 }
 nav .queue p {
   padding: 1%;
+  width: auto;
 }
 footer {
   display: flex;
